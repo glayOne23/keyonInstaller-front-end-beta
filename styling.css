@@ -1,0 +1,99 @@
+@import url(assets/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+
+body{
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  background-color: #1F2833;
+}
+
+/* buat jadi tengah pas*/
+/* vh --> viewport percentage */
+.jaditengah {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jaditengah1 {
+  position: relative;
+  float: left;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+img:hover {
+    transform: scale(1.3);
+}
+
+/* bwt warna dan full screen */
+.warna1{
+  background-color: #1F2833;
+  height: 100vh;
+}
+/* bunder ul li */
+.round {
+  border:2px solid white;
+  height:100px;
+  border-radius:90%;
+  width:100px;
+  margin: 0 2em;
+  display: inline-block;
+  position: relative;
+}
+.round::before{
+  content: '';
+  position: absolute;
+  top: 45px;
+  right: 100px;
+  width: 65px;
+  height: 2px;
+  background: white;
+  z-index: -1;
+}
+li:first-child::before {
+  display: none;
+}
+
+/* setting h1,h2, h3 */
+h1,h2,h3{
+  color: white;
+}
+
+h1.major:after, h2.major:after, h3.major:after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  width: 10rem;
+  height: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+p{
+  color: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.kembali{
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+.kembali:hover{
+  transform: scale(1.1);
+}
